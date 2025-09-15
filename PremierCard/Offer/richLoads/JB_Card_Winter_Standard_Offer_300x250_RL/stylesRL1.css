@@ -1,0 +1,225 @@
+body,
+body * {
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+button,
+div,
+img,
+svg,
+video {
+  position: absolute;
+}
+
+#main_container {
+  position: absolute;
+  background-color: #000064;
+  /* border: 1px solid #000000; */
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  width: 300px;
+  height: 250px;
+}
+
+#main_content {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 300px;
+  height: 250px;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+#default_exit {
+  top: -1px;
+  left: -1px;
+  width: 300px;
+  height: 250px;
+  z-index: 500;
+  cursor: pointer;
+}
+
+:focus {
+  outline: 0;
+}
+
+::-moz-focus-inner {
+  border: 0;
+}
+
+/* Custom Styling */
+@font-face {
+  font-family: "ESKlarheitGrotesk Smbd";
+  src: url("./fonts/ESKlarheitGrotesk-Smbd.woff");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "ESKlarheitGrotesk Xbd";
+  src: url("./fonts/ESKlarheitGrotesk-Xbd.woff");
+  font-weight: normal;
+}
+
+
+.full-width{
+  width: 300px;
+  height: 250px;
+}
+
+
+.copy1, .copy2, .copy3{
+  width: 100%;
+  font-family: "ESKlarheitGrotesk Xbd";
+  color: #fff;
+  will-change: transform;
+}
+.copy1 span, .copy2{
+  display: block;
+  position: absolute;
+  width: 100%;
+}
+.copy1 .line1{
+  font-size: 25.5px;
+  top: 13.5px;
+  left: 18px;
+  letter-spacing: -0.3px;
+}
+.copy1 .line2{
+  font-size: 62px;
+  top: 31px;
+  color: #00e1ff;
+  left: 16px;
+}
+.copy1 .line3{
+  font-size: 25.1px;
+  top: 97.7px;
+  left: 18px;
+}
+.copy1 .line3 sup{
+  line-height: 0;
+  font-size: 16px;
+}
+.copy2 .line1{
+  top: 14.5px;
+  font-size: 26px;
+  line-height: 32px;
+  left: 18px;
+  display: block;
+  position: absolute;
+}
+.copy2 .line2{
+  top: 34px;
+  font-size: 61px;
+  letter-spacing: -0.5px;
+  color: #00e1ff;
+  left: 18px;
+  display: block;
+  position: absolute;
+}
+.copy2 .line3{
+  top: 99px;
+  font-size: 25.5px;
+  line-height: 32px;
+  display: inline-block;
+  position: absolute;
+  left: 18px;
+}
+.copy2 .line4{
+  top: 99px;
+  font-size: 25.1px;
+  line-height: 32px;
+  color: #00e1ff;
+  display: inline-block;
+  position: absolute;
+  left: 114px;
+}
+.copy2 .line4 strong{
+  color: #fff;
+}
+.copy2 .line4 sup{
+  line-height: 0;
+  font-size: 15px;
+  color: #fff;
+}
+.copy3{
+  width: 100%;
+  color: #fff;
+  font-size: 25.4px;
+  top: 15.5px;
+  line-height: 27.4px;
+  letter-spacing: -0.7px;
+  left: 18px;
+}
+.copy3 span{
+  color: #00e1ff;
+}
+.last-frame{
+  width: 100%;
+  height: 250px;
+  /* border-top: #ff6433 solid 8px; */
+  background-color: #000064;
+  transform: translateY(250px);
+  will-change: transform;
+}
+
+
+#cta{
+  font-family: "ESKlarheitGrotesk Smbd";
+  background-color: #00e1ff;
+  display: inline-block;
+  font-size: 12.4px;
+  top: 132.5px;
+  left: 19.5px;
+  width: 99.5px;
+  height: 33.5px;
+  color: #000064;
+  text-align: center;
+  line-height: 31px;
+  border-radius: 3px;
+}
+
+.term{
+  font-family: "ESKlarheitGrotesk Smbd";
+  color: #fff;
+  width: 100%;
+  font-size: 5.8px;
+  top: 224px;
+  left: 148px;
+}
+#termlast{
+  color: #fff;
+  left: 244px;
+}
+/* Shine effect */
+#shine {
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 250px;
+  background-image: url(./images/shine.png);
+  background-size: contain;
+  background-position: -130px 13px;
+  background-repeat: no-repeat;
+  position: absolute;
+  mix-blend-mode: soft-light;
+  -webkit-mask-image: url(./images/mask.png);
+  -webkit-mask-size: 300px 250px;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-image: url(./images/mask.png);
+}
