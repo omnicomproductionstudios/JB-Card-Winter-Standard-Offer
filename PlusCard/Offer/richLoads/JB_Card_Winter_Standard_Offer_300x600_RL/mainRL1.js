@@ -29,7 +29,7 @@ function animate() {
     .to('#copy2', 1, {y: 0, autoAlpha: 1, ease: Power1.easeInOut}, 'frame1+=3.7')
   .addLabel('frame2', 8.5)
     .to(['#copy2, #card, #logo'], 0.5, {autoAlpha: 0, ease: Power1.easeInOut}, 'frame2')
-    .to('#lastFrame',0.5,{x: 0, ease: Power1.easeInOut}, 'frame2')
+    .to('#lastFrame',0.5,{y: 0, ease: Power1.easeInOut}, 'frame2')
     .to('#shine', 0.5, {backgroundPosition: '265px 0px'}, 'frame2+=1');
 }
 
